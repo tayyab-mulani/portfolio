@@ -1,0 +1,219 @@
+.projects.section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 60px;
+}
+
+.projects_section_tag{
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--second-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-500);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.projects__container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+}
+
+.projects__item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+}
+
+.projects__img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.projects__hover {
+    background-color: var(--first-color);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.projects__item:hover .projects__hover {
+    opacity: 1;
+}
+.projects__title {
+    color: var(--text-white);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+    text-align: center;
+    padding-inline: 16px;
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+}
+
+.projects__item:hover .projects__title {
+    transform: translateY(0);
+}
+
+.projects__modal {
+    position: fixed;
+    inset: 0;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.projects__modal-content {
+    background-color: var(--body-color);
+    border: 1px solid var(--border-color);
+    max-width: 860px;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    animation: modalIn 0.25s ease;
+}
+
+@keyframes modalIn {
+    from { opacity: 0; transform: translateY(20px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Hero */
+.modal__hero {
+    position: relative;
+    height: 360px;
+}
+
+.modal__hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.modal__hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, hsla(0,0%,0%,0.75) 0%, transparent 60%);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 24px;
+}
+
+.modal__title {
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-700);
+    color: #fff;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: hsla(0,0%,0%,0.5);
+    border: 1px solid hsla(0,0%,100%,0.2);
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modal__close-btn:hover {
+    background-color: var(--first-color);
+}
+
+/* Body */
+.modal__body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.modal__section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal__section-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--tiny-font-size);
+    font-weight: var(--weight-600);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--first-color);
+}
+
+.modal__section-text {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Tech pills */
+.modal__tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.modal__tech-pill {
+    font-size: var(--tiny-font-size);
+    font-weight: var(--weight-600);
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    color: var(--title-color);
+    background-color: var(--container-color);
+}
+
+/* GitHub button */
+.modal__github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: var(--first-color);
+    color: #fff;
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-600);
+    font-family: var(--second-font);
+    transition: opacity 0.2s;
+    align-self: flex-start;
+}
+
+.modal__github-btn:hover {
+    opacity: 0.85;
+}
