@@ -21,15 +21,15 @@ import {
     SiCplusplus,
 } from 'react-icons/si';
 
-import Work1 from './assets/elder-prj.png';
-import Work2 from './assets/AMZN-prj.png';
-import Work3 from './assets/Smarttime-prj.png';
-import Work4 from './assets/BeyondCoffee.jpeg';
-import Work5 from './assets/fairshare-prj.png';
-import Work6 from './assets/ClubHub.png';
-import Work7 from './assets/ARS - prj.png';
-import Work8 from './assets/Analytics.png';
-import Work9 from './assets/budgetwise.png';
+import Work1 from './assets/elder-prj.webp';
+import Work2 from './assets/AMZN-prj.webp';
+import Work3 from './assets/Smarttime-prj.webp';
+import Work4 from './assets/BeyondCoffee.webp';
+import Work5 from './assets/fairshare-prj.webp';
+import Work6 from './assets/ClubHub.webp';
+import Work7 from './assets/ARS - prj.webp';
+import Work8 from './assets/Analytics.webp';
+import Work9 from './assets/budgetwise.webp';
 
 export const links = [
     {
