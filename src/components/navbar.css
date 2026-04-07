@@ -21,19 +21,28 @@
 }
 
 .nav__icon,
-.nav__name {
+.nav__name,
+.theme__label {
     color: var(--title-color);
     font-size: 24px;
 }
 
-.nav__name {
+.nav__name,
+.theme__label {
+    font-family: var(--body-font);
     font-weight: var(--weight-500);
+}
+
+.active-nav {
+    background-color: var(--first-color);
+    border-radius: 8px;
+    margin-inline: -30px;
+    padding-inline: 30px;
 }
 
 .active-nav .nav__icon,
 .active-nav .nav__name {
     color: var(--text-white);
-    visibility: visible;
 }
 
 .nav__toggle {
@@ -96,9 +105,6 @@
 
 .theme__label {
     color: var(--title-color);
-    font-family: var(--second-font);
-    font-size: 24px;
-    font-weight: var(--weight-500);
 }
 
 /* Desktop: hidden by default, shown via media query below */
@@ -170,6 +176,9 @@
     .nav__link:hover,
     .active-nav {
         background-color: var(--first-color);
+        border-radius: 50%;
+        margin-inline: 0;
+        padding-inline: 0;
     }
 
     .nav__link:hover .nav__icon,

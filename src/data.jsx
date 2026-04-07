@@ -162,7 +162,6 @@ export const resume = [
         icon: <FaGraduationCap/>,
         year: 'September 2024 - Expected December 2026',
         title: 'Degree: Master of Science in Software Engineering Systems <span> \n Northeastern University, Boston, MA, USA </span>',
-        desc: 'MS in Software Engineering Systems',
         overviewLabel: 'Coursework',
         overview: [
             'Object-Oriented Design',
@@ -179,7 +178,6 @@ export const resume = [
         icon: <FaGraduationCap/>,
         year: 'September 2020 - July 2024',
         title: 'Degree: Bachelor of Technology in Electronics & Telecommunication <span> Savitribai Phule Pune University, Pune, MH, India </span>',
-        desc: 'B.Tech in Electronics & Telecommunication',
         overviewLabel: 'Coursework',
         overview: [
             'Object Oriented Programming',
